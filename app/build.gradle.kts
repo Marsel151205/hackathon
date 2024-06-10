@@ -85,9 +85,9 @@ dependencies {
     // Converter Gson
     implementation(libs.converter.gson)
 
-    // Room
-    implementation(libs.hilt.android)
-    kapt(libs.hilt.android.compiler)
+    // Hilt
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
 
     // OkHttp
     implementation(libs.okhttp)
