@@ -3,6 +3,177 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3F3F3"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp"
     tools:context=".ui.fragments.authentication.registration.RegistrationFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/registration"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edit_text_register"
+            android:hint="@string/name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="12sp"
+            android:textColorHint="@color/gray" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edit_text_register"
+            android:hint="@string/email"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto"
+            android:textColorHint="@color/gray"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/gray"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_password"
+            android:background="@drawable/background_edit_text_register"
+            android:hint="@string/password"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="12sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/gray"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edit_text_register"
+            android:id="@+id/et_confirm_password"
+            android:hint="@string/confirm_password"
+            android:textSize="12sp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <CheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            style="@style/CustomCheckBox"
+            android:id="@+id/cb_policy"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Я ознакомлен с Политикой в отношении\n обработки персональных данных     "
+            android:textColor="#070707"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="#55B935"
+        android:fontFamily="@font/roboto"
+        android:paddingVertical="14dp"
+        android:text="@string/sign_in"
+        android:textSize="16sp"
+        app:cornerRadius="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/has_account"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_green"
+            android:text="@string/sign_in"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tv_sign_in"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="26dp"
+        android:text="@string/collect_trash"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:src="@drawable/trash"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/hoard_coins"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/black"/>
+
 
 </LinearLayout>

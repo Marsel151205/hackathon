@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="14dp"
+    tools:context=".ui.fragments.chat.ChatFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/report"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/iv_report"
+            tools:src="@color/black"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attach_photo"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:textSize="16sp"
+        android:id="@+id/tv_attach_photo_report"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto"
+        app:drawableStartCompat="@drawable/ic_camera" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_send_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#55B935"
+        android:fontFamily="@font/roboto"
+        android:paddingVertical="14dp"
+        android:text="@string/send"
+        android:textSize="16sp"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оставить комментарий на маршруте"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/iv_comment"
+            tools:src="@color/black"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attach_photo"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:textSize="16sp"
+        android:id="@+id/tv_attach_photo_comment"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto"
+        app:drawableStartCompat="@drawable/ic_camera" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_send_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#55B935"
+        android:fontFamily="@font/roboto"
+        android:paddingVertical="14dp"
+        android:text="@string/send"
+        android:textSize="16sp"
+        app:cornerRadius="10dp" />
+
+
+</LinearLayout>
