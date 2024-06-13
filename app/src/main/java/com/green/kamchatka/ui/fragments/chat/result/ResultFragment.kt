@@ -1,4 +1,4 @@
-package com.green.kamchatka.ui.fragments.chat.report.success
+package com.green.kamchatka.ui.fragments.chat.result
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,20 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.green.kamchatka.R
-import com.green.kamchatka.databinding.FragmentSuccessBinding
+import com.green.kamchatka.databinding.FragmentResultBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class SuccessFragment : Fragment() {
+class ResultFragment : Fragment() {
 
-    private var _binding: FragmentSuccessBinding? = null
+    private var _binding: FragmentResultBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentSuccessBinding.inflate(layoutInflater)
+        _binding = FragmentResultBinding.inflate(layoutInflater)
         return binding.root
     }
 
