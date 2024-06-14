@@ -91,4 +91,7 @@ dependencies {
 
     // OkHttp
     implementation(libs.okhttp)
+
+    // Yandex MapKit
+    implementation("com.yandex.android:maps.mobile:4.6.1-lite")
 }
