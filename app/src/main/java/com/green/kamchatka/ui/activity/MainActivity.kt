@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                     binding.bottomNavigation.visibility = View.VISIBLE
                     binding.toolbar.visibility = View.VISIBLE
                     binding.tvTitleScreen.text = "Парки"
-                    binding.icBack.visibility = View.GONE
+//                    binding.icBack.visibility = View.GONE
                 }
                 R.id.profileFragment -> {
                     binding.tvTitleScreen.text = "Личный кабинет"
