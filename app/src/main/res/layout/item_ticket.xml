@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="25dp"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/iv_qr_code"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@color/black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="15 сентября 2024г"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_name_trail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Парк Налычево\nТропа Авачинский-кордон\n“Центральный”  "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_number_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="3 человека"
+            android:textColor="#646464" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="14sp"
+            android:backgroundTint="#DEDEDE"
+            android:id="@+id/btn_cancel"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

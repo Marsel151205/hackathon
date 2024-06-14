@@ -24,4 +24,11 @@
     <string name="report">Сообщить о проблеме</string>
     <string name="attach_photo">Прикрепить фото</string>
     <string name="send">Отправить</string>
+    <string name="personal_data">Личные Данные</string>
+    <string name="phone">Телефон</string>
+    <string name="nickname">Никнейм</string>
+    <string name="confirmation_code">Код подтверждения</string>
+    <string name="rewards">Достижения</string>
+    <string name="my_tickets">Мои билеты</string>
+    <string name="cancel">Отменить</string>
 </resources>

@@ -1,14 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="25dp"
     tools:context=".ui.fragments.profile.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="0dp">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/iv_user_photo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@color/black" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_change"
+        app:layout_constraintBottom_toBottomOf="@id/cv_avatar"
+        app:layout_constraintEnd_toEndOf="@id/cv_avatar" />
+
+    <TextView
+        android:id="@+id/tv_name_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Mambetaliev \nMarsel \nAitbekovich"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/cv_avatar"
+        app:layout_constraintStart_toEndOf="@id/cv_avatar"
+        app:layout_constraintTop_toTopOf="@id/cv_avatar" />
+
+    <TextView
+        android:id="@+id/tv_personal_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/personal_data"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_avatar" />
+
+    <TextView
+        android:id="@+id/tv_nickaname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/nickname"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_personal_data" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nickaname" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="@string/phone"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_email" />
+
+    <TextView
+        android:id="@+id/tv_rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/rewards"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone" />
+
+    <ImageView
+        android:id="@+id/iv_reward"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:src="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_rewards" />
+
+    <TextView
+        android:id="@+id/tv_name_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Начинающий\nэколог"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/iv_reward"
+        app:layout_constraintTop_toTopOf="@id/iv_reward" />
+
+    <TextView
+        android:id="@+id/tv_coin_new_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/roboto"
+        android:text="Еще 10 экокоинтов до \nнового уровня"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/tv_name_reward"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_reward" />
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Баланс: 20 экокоинтов"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_reward" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_balance"
+        android:text="@string/my_tickets"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tv_my_tickets"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/rv_my_tickets"
+        app:layout_constraintTop_toBottomOf="@id/tv_my_tickets"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_ticket"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
