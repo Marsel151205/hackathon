@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="CustomCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="android:button">@drawable/button_checkbox</item>
         <item name="android:background">@drawable/background_checkbox</item>
+    </style>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+    </style>
+
+    <style name="ParksRatingBar" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/ic_rating</item>
+        <item name="android:indeterminateDrawable">@drawable/ic_rating_active</item>
     </style>
 </resources>

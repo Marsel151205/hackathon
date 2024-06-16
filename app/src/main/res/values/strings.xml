@@ -33,4 +33,20 @@
     <string name="cancel">Отменить</string>
     <string name="text">Но базовый вектор развития не даёт нам иного выбора, кроме определения анализа существующих паттернов поведения. Современные технологии достигли такого уровня, что перспективное планирование однозначно определяет каждого участника как способного принимать собственные решения касаемо модели развития. Мы вынуждены отталкиваться от того, что современная методология разработки способствует подготовке и реализации стандартных подходов.</string>
     <string name="reviewrs">Был возле источника родниковой воды на тропе “Центральный”, всё хорошо, белки довольны, воздух чистый.</string>
+    <string name="choose_source">Выберите источник</string>
+    <string name="gallery">Галерея</string>
+    <string name="camera">Камера</string>
+    <string name="input_text">Введите текст...</string>
+    <string name="become_volunteer">Стать волонтёром</string>
+    <string name="date_complete">Дата прохождения</string>
+    <string name="count_people">Количество человек</string>
+    <string name="passport_number">Номер паспорта</string>
+    <string name="when_issued">Когда выдан</string>
+    <string name="passport_series">Серия паспорта</string>
+    <string name="whom">Кем</string>
+    <string name="where">Где</string>
+    <string name="car_number">Номер автомобиля</string>
+    <string name="book">Забронировать</string>
+    <string name="phone_number">Телефон</string>
+    <string name="recover">Восстановить</string>
 </resources>
